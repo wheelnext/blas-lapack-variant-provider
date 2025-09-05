@@ -26,17 +26,10 @@ class VariantProperty:
     value: str
 
 
-def get_supported_configs(
-    known_properties: frozenset[VariantProperty] | None,
-) -> list[VariantFeatureConfig]:
+def get_supported_configs() -> list[VariantFeatureConfig]:
     return [
         VariantFeatureConfig("provider", _blas_providers),
     ]
 
 
-def validate_property(variant_property: VariantProperty) -> bool:
-    assert variant_property.namespace == namespace
-    return (
-        variant_property.feature == "provider"
-        and variant_property.value in _blas_providers
-    )
+get_all_configs = get_supported_configs
