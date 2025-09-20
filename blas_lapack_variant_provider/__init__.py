@@ -7,6 +7,7 @@ from dataclasses import dataclass
 __version__ = "0.0.1"
 namespace = "blas_lapack"
 dynamic = False
+is_build_plugin = True
 
 _blas_providers = ["accelerate", "openblas", "mkl"]
 
