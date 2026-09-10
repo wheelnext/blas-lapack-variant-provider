@@ -4,9 +4,8 @@ from __future__ import annotations
 
 from dataclasses import dataclass
 
-__version__ = "0.0.2"
-namespace = "blas_lapack"
-is_build_plugin = True
+__version__ = "0.0.3"
+all_properties_compatible = True
 
 _blas_providers = ["accelerate", "openblas", "mkl"]
 
