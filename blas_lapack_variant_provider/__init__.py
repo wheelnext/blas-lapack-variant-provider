@@ -4,7 +4,7 @@ from __future__ import annotations
 
 from dataclasses import dataclass
 
-__version__ = "0.0.3"
+__version__ = "0.0.4"
 all_properties_compatible = True
 
 _blas_providers = ["accelerate", "openblas", "mkl"]
