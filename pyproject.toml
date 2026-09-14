@@ -16,4 +16,4 @@ dependencies = []
 Home = "https://github.com/wheelnext/blas-lapack-variant-provider/"
 
 [project.entry-points.variant_plugins]
-blas_lapack_variant_provider = "blas_lapack_variant_provider"
+blas_lapack = "blas_lapack_variant_provider"
